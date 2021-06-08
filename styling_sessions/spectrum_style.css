@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+h1{
+    font-family: 'Pattaya', sans-serif;
+    text-align: center;
+}
+div{
+    width: 100px;
+    height: 190px;
+    border: 1px solid black;
+    float: left;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-bottom: 5px;
+}
+.one{
+    background-color: brown;
+    margin-left: 538px;
+    
+    
+}
+.two{
+    background-color: burlywood;
+}
+.three{
+    background-color: cornflowerblue;
+}
+.four{
+    background-color: darkkhaki;
+}
+.five{
+    background-color: darkmagenta;
+}
+.six{
+   
+    margin-left: 433px;
+    background-color: lawngreen;
+}
+.seve{
+    background-color: lightcoral;
+}
+.eig{
+    background-color: lightgreen;
+}
+.nin{
+    background-color: lime;
+}
+.ten{
+    background-color: mediumorchid;
+}
+.ele{
+    background-color: mediumpurple;
+}
+.twe{
+    background-color: navy;
+}
+.thi{
+    background-color: darkorange;
+    margin-left: 328px;
+}
+.for{
+    background-color: darkred;
+}.fi{
+    background-color: darksalmon;
+}
+.si{
+    background-color: dodgerblue;
+}
+.se{
+    background-color: gold;
+}
+.ei{
+    background-color: green;
+}
+.ni{
+    background-color: hotpink;
+}
+.tw{
+    background-color: lavender;
+}
+.tone{
+    background-color: lawngreen;
+}

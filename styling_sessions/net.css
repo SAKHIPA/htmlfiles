@@ -1,0 +1,16 @@
+h1{
+    text-align: center;
+}
+.tab{
+    text-align: center;
+    table-layout: auto;
+}
+.man{
+    background-color: burlywood;
+}
+.pi{
+    background-color: chartreuse;
+}
+.ter{
+    background-color: crimson;
+}

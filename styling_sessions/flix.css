@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+.main_head{
+    font-family: 'ZCOOL KuaiLe', cursive;
+    text-align: center;
+   
+}
+.movie{
+    width: 33%;
+    border: 1px solid rebeccapurple;
+    float: left;
+}
+.movie img{
+    width: 100%;
+    height: 400px;
+}
+.row2{
+    width: 100%;
+
+}
+.col{
+    float: left;
+    width: 33%;
+    border: 1px;
+}
+   

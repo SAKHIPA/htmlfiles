@@ -1,0 +1,23 @@
+.row-1{
+    background-color: #5E068A;
+    height: 30px;
+    
+    background-color: #5E068A;
+}
+.row-1 a{
+    text-decoration: none;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.nav-1{
+    color: #2d3e50;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+   
+    margin-right: 192px;
+}
+.logo-1{
+    margin-left: 179px;
+}
