@@ -2,7 +2,7 @@ var num1=15;
 var num2=15;
 var num3=15;
 var result="";
-if(num1>=num2&num1>num3){
+if(num1>num2&num1>num3){
  console.log("num1 is greater");
 }
 else if(num2>num1&num2>num3){
