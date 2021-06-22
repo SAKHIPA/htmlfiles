@@ -3,6 +3,11 @@
     height: 30px;
     
     background-color: #5E068A;
+    display: flex;
+    flex-direction: row;
+}
+.divnav1{
+    padding-left: 200px;
 }
 .row-1 a{
     text-decoration: none;
@@ -18,6 +23,43 @@
    
     margin-right: 192px;
 }
+
+
+
+.watsapp{
+    position: fixed;
+    color: green;
+        
+}
+
+
+
 .logo-1{
     margin-left: 179px;
+}
+.gallery{
+    margin-top: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.gallery p{
+    line-height: 1.8;
+    text-align: center;
+}
+.lastcol{
+    background-color: #320946;
+    color: white;
+   
+}
+.lastcol a{
+    text-decoration: none;
+    color: white;
+    
+
+}
+.last{
+    background-color:#320946 ;
+    margin-top: 50px;
+
 }
