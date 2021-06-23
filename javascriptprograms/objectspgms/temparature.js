@@ -25,7 +25,7 @@ for (let data of temperature) {//district:"tvm",temper:25
         wheather[distric] = temp;
     }
     else {
-        let old_temp = wheather[district];
+        let old_temp = wheather[distric];
         if (old_temp < temp) {
             wheather[distric] = temp;
         }
@@ -37,5 +37,7 @@ for (let data of temperature) {//district:"tvm",temper:25
 
 }
 console.log(wheather);
-console.log("sorting temperature");
 
+function sortByTemp(data){
+    
+}
