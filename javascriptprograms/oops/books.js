@@ -1,12 +1,13 @@
 class BookLibrary {
 
     getBooks() {
-        let books = {
-            "the alkemist": { bookName: "the alchemist", auther: "paulo", prize: 200, avlQty: 5 },
-            "two states": { bookName: "two states", auther: "chetan bagat", prize: 300, avlQty: 10 },
-            "veenapoovu": { bookName: "veenapoovu", auther: "kumaranasaan", prize: 250, avlQty: 15 },
-            "the destination": { bookName: "destination", auther: "william", prize: 500, avlQty: 15 },
-            "girl friend": { bookName: "girl friend", auther: "chetan bagath", prize: 300, avlQty: 5 }
+     books = {
+            "the alkemist": { bookName: "the alchemist", auther: "paulo", prize: 200, total: 5 , sold:2},
+            "two states": { bookName: "two states", auther: "chetan bagat", prize: 300,total: 10 , sold:3},
+            "veenapoovu": { bookName: "veenapoovu", auther: "kumaranasaan", prize: 250,  total: 15, sold:6 },
+            "veenapoovu": { bookName: "veenapoovu", auther: "kumaranasaan", prize: 250,  total: 15, sold:4 },
+            "the destination": { bookName: "destination", auther: "william", prize: 500, total: 15 , sold:1},
+            "girl friend": { bookName: "girl friend", auther: "chetan bagath", prize: 300,  total: 5 , sold:5}
         }
         return books
 
@@ -14,25 +15,34 @@ class BookLibrary {
 
     findBook(bkName) {
         let bookDetails = this.getBooks()
-        for (let bkName in bookDetails) {
+        if (bkName in bookDetails) {
 
-            if (bkName == bookDetails["bookName"]) {
-                //return 1//yes
-                console.log("yes");
+
+            //return 1//yes
+            if(bookDetails["bookName"][total]>bookDetails["bookName"][sold]){
+
+            let available=bookDetails["bookName"][total]-bookDetails["bookName"][sold]
+
+            console.log("available no of books",available);
             }
-            else {
-                //  return 0//no
-                console.log("no");
+            else{
+                console.log("not available");
             }
+
         }
-        //}else{
-        //console.log("not in list");
+        else {
+            return 0//no
+
+        }
+
+
+
     }
 
 
 }
 
 var obj = new BookLibrary()
-obj.findBook("apoovu ")
-// var res=bkName==1?"yes":"no";
-// console.log(res)
+var user = obj.findBook("veenapoovu")
+var res = user == 1 ? "yes" : "no";
+console.log(res)

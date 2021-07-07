@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>js dom</h1>
+    <h1>document obj model</h1>
+    <h2 id="htwo">js file</h2>
+    <ul>
+        <li class="yel">function1</li>
+        <li class="lis">two</li>
+        <li class="lis">three</li>
+    </ul>
+    <h3 id="sec">getElementByTagName()</h3>
+    
+</body>
+<script>
+    var hone=document.getElementsByTagName("h1")
+    for(let tag of hone){   
+        tag.style.color="red"
+    }
+    var htwoo=document.getElementById("htwo")
+    htwoo.style.color="green"
+
+    var lists=document.getElementsByClassName("lis")
+    for(let tag of lists){
+        tag.style.color="blue"
+    }
+
+    sec.style.color="yellow"
+
+    var query=document.querySelectorAll("li")
+    for(let tag of query){
+        tag.style.color="purple"
+    }
+
+    var que=document.querySelector(".yel")
+    que.style.color="black"
+
+    var hone=document.querySelector("h1")
+    // hone.textContent="<em>js document</em>"
+    // hone.style.color="blue"
+
+    hone.innerHTML="<em>documents</em>"
+</script>
+</html>

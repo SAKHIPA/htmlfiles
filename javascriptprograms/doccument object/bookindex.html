@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=dic., initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <input type="text" name="" id="bkname" placeholder="bookName">
+        <input type="text" id="author" placeholder="authorName">
+        <input type="text" id="price" placeholder="price">
+        <input type="text" name="" id="copy" placeholder="copy">
+        <button onclick="createBook()">createBook</button>
+        <button onclick="fetchAllBook()">listAllBooks</button>
+
+    </div>
+    <div>
+        <table>
+            <tr>
+                <td>book name</td>
+                <td>auther</td>
+                <td>price</td>
+                <td>quantity</td>
+            </tr>
+            <tbody id="result"></tbody>
+
+        </table>
+    </div>
+
+</body>
+
+
+
+<script>
+
+   function findBook(){
+       let bname=srch.value
+       if(bname in localStorage){
+           let book=JSON.parse(localStorage.getItem(bname))
+           console.log(book);
+           let htmlData=
+
+           
+       }
+   }
+
+
+
+    function populate(books) {
+        let htmlData = ""
+        for (let book of books) {
+            htmlData += `<tr><td> ${book.bookName}</td> <td>${book.author}</td> <td>${book.price}</td><td>${book.copy}</td> </tr>`
+            result.innerHTML = htmlData
+        }
+
+    }
+    function createBook() {
+        let bookName = bkName.value
+        let author = autor.value
+        let amount = price.value
+        let qty = copy.value
+        let book = {
+            bookName, author, amount, qty
+        }
+
+        if (!(bookName in localStorage)) {
+            localStorage.setItem(bookName, JSON.stringify(book))
+            alert("book created")
+            location.reload(true)
+        }
+        else {
+            alert("book already exist")
+        }
+
+    }
+
+    
+
+
+
+
+    function fetchAllBooks() {
+        let books = []
+        for (let i = 0; i < localStorage.length; i++) {
+            let key = localStorage.key(i)
+            let book = JSON.parse(localStorage.getItem(key))
+            books.push(book)
+        }
+        console.log(books);
+        populate(books)
+
+    }
+
+</script>
+
+</html>
